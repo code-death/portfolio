@@ -10,12 +10,15 @@ import {
   Works,
   StarsCanvas,
 } from "./components";
+import './App.css'
+import Background from "./modules/HomePage/Components/Background.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="relative z-0 bg-primary">
-        <div className="bg-hero-pettern bg-cover bg-null-repeat bg-center">
+      <Background />
+      <div className="main-container">
+        <div className="">
           <Navbar />
           <Hero />
         </div>
@@ -24,7 +27,7 @@ function App() {
           <Tech />
           <Works />
           <Feedbacks />
-        <div className="relative z-0">
+        <div className="">
            <Contact />
            <StarsCanvas />
         </div>
