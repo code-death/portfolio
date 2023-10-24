@@ -1,12 +1,11 @@
 .welcome-background {
     position: absolute;
-    top: 0;
+    top: 40vh;
     /* Add your background styles here */
 }
 
 .text-msg {
     position: relative;
-    top: 20vh;
     left: 10vw;
     text-align: center;
 }
