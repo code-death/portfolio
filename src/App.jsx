@@ -1,22 +1,12 @@
-import { BrowserRouter } from "react-router-dom";
-import {
-  About,
-  Contact,
-  Experience,
-  Feedbacks,
-  Hero,
-  Navbar,
-  Tech,
-  Works,
-  StarsCanvas,
-} from "./components";
+import {BrowserRouter} from "react-router-dom";
+import {About, Contact, Experience, Feedbacks, Hero, Navbar, StarsCanvas, Tech, Works,} from "./components";
 import './App.css'
-import Background from "./modules/HomePage/Components/Background.jsx";
+import HomePage from "./modules/HomePage/HomePage.jsx";
 
 function App() {
   return (
     <BrowserRouter>
-      <Background />
+      <HomePage />
       <div className="main-container">
         <div className="">
           <Navbar />
