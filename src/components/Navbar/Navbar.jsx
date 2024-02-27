@@ -5,12 +5,12 @@ import {Link, NavLink} from "react-router-dom";
 const Navbar = () => {
   return (
     <nav className={'navbar'}>
-        <img className={'nav-profile-img'} src={'/profile.png'} alt={'profile'}/>
+        <a href={'#welcome'}><img className={'nav-profile-img'} src={'/profile.png'} alt={'profile'}/></a>
       <div className={'nav-links'}>
-        <NavLink className={'nav-link'} to={'#about'} >About</NavLink>
-        <NavLink className={'nav-link'} to={'#experience'} >Experience</NavLink>
-        <NavLink className={'nav-link'} to={'#projects'} >Projects</NavLink>
-        <NavLink className={'nav-link'} to={'#contact'} >Contact</NavLink>
+        <a className={'nav-link'} href={'#about'} >About</a>
+        <a className={'nav-link'} href={'#experience'} >Experience</a>
+        <a className={'nav-link'} href={'#projects'} >Projects</a>
+        <a className={'nav-link'} href={'#contact'} >Contact</a>
       </div>
     </nav>
   )

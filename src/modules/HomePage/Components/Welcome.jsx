@@ -12,7 +12,7 @@ const Welcome = () => {
     ];
 
 
-    return <div className={'welcome-background'}>
+    return <div id={'welcome'} className={'welcome-background'}>
         <div className={'text-msg'}>
             <h1 className={'heading'}>Hi, Myself Poorvansh</h1>
             <TypeAnimation
