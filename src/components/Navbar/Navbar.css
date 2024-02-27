@@ -50,6 +50,11 @@
     }
 }
 
+.flex-align-center {
+    display: flex;
+    align-items: center;
+}
+
 .nav-profile-img {
     width: 38px;
     border-radius: 500px;
@@ -58,7 +63,7 @@
 .navbar-scrolled {
     z-index: 1000;
     margin-left: 25vw;
-    padding: 32px 72px;
+    padding: 32px 42px;
     height: 50px;
     display: flex;
     justify-content: space-between;
@@ -67,7 +72,7 @@
     top: 40px;
     width: 50vw;
     background-color: #3f3f3f66;
-    border-radius: 32px;
+    border-radius: 16px;
     border: 1px solid #515151;
     opacity: 0.6;
     transition: opacity 300ms ease-in-out;

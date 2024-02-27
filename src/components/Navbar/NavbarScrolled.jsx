@@ -4,7 +4,7 @@ import {NavLink} from "react-router-dom";
 const NavbarScrolled = () => {
     return (
             <nav className={'navbar-scrolled'}>
-                <a href={'#welcome'}><img className={'nav-profile-img'} src={'/profile.png'} alt={'profile'}/></a>
+                <a className={'flex-align-center'} href={'#welcome'}><img className={'nav-profile-img'} src={'/profile.png'} alt={'profile'}/></a>
                 <div className={'nav-links-scrolled'}>
                     <a className={'nav-link'} href={'#about'} >About</a>
                     <a className={'nav-link'} href={'#experience'} >Experience</a>
