@@ -30,9 +30,7 @@ function App() {
           <Experience />
           <Works />
           {/*<Feedbacks />*/}
-        <div className="">
            <Contact />
-        </div>
       </div>
     </BrowserRouter>
   );
