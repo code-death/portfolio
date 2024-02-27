@@ -5,6 +5,7 @@
 }
 
 .text-msg {
+    width: max-content;
     top: 40vh;
     position: relative;
     left: 10vw;

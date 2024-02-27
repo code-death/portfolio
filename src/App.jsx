@@ -5,6 +5,7 @@ import HomePage from "./modules/HomePage/HomePage.jsx";
 import SideScroll from "./components/SideScroll/SideScroll.jsx";
 import {useEffect, useState} from "react";
 import Welcome from "./modules/HomePage/Components/Welcome.jsx";
+import {AnimatePresence} from "framer-motion";
 
 function App() {
     const [scrollPosition, setScrollPosition] = useState(window.scrollY);
@@ -22,16 +23,17 @@ function App() {
   return (
     <BrowserRouter>
         <SideScroll />
-      <div className="main-container">
-          {scrollPosition < 10 ? <Navbar /> : <NavbarScrolled />}
-          <HomePage />
-          <Welcome />
-          <About />
-          <Experience />
-          <Works />
-          {/*<Feedbacks />*/}
-           <Contact />
-      </div>
+            <div className="main-container">
+                <Navbar scrollPosition={scrollPosition} />
+                <NavbarScrolled scrollPosition={scrollPosition} />
+                <HomePage />
+                <Welcome />
+                <About />
+                <Experience />
+                <Works />
+                {/*<Feedbacks />*/}
+                <Contact />
+            </div>
     </BrowserRouter>
   );
 }
