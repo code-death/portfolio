@@ -7,10 +7,10 @@ const Navbar = () => {
     <nav className={'navbar'}>
         <img className={'nav-profile-img'} src={'/profile.png'} alt={'profile'}/>
       <div className={'nav-links'}>
-        <NavLink to={'#about'} >About</NavLink>
-        <NavLink to={'#experience'} >Experience</NavLink>
-        <NavLink to={'#projects'} >Projects</NavLink>
-        <NavLink to={'#contact'} >Contact</NavLink>
+        <NavLink className={'nav-link'} to={'#about'} >About</NavLink>
+        <NavLink className={'nav-link'} to={'#experience'} >Experience</NavLink>
+        <NavLink className={'nav-link'} to={'#projects'} >Projects</NavLink>
+        <NavLink className={'nav-link'} to={'#contact'} >Contact</NavLink>
       </div>
     </nav>
   )

@@ -25,7 +25,7 @@ const Welcome = () => {
                    'I am a Designer',
                     1000,
                 ]}
-                speed={50}
+                speed={40}
                 className={'heading2'}
                 repeat={Infinity}
             />

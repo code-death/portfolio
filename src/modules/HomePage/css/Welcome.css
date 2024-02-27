@@ -1,16 +1,18 @@
 .welcome-background {
-    position: absolute;
+    height: 100vh;
     top: 40vh;
     /* Add your background styles here */
 }
 
 .text-msg {
+    top: 40vh;
     position: relative;
     left: 10vw;
     text-align: center;
 }
 
 .heading {
+    text-align: left;
     position: relative;
     font-size: 46px;
     font-family: monospace;
@@ -25,6 +27,7 @@
     font-family: monospace;
     font-weight: 100;
     width: max-content;
+    animation: colorchange 5s infinite ease-in-out;
 }
 
 .headingSpan {

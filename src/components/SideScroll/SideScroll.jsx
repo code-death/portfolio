@@ -1,7 +1,7 @@
 import {useEffect, useState} from "react";
 import './SideScroll.css'
 
-const totalSections = 4;
+const totalSections = 5;
 
 const SideScroll = () => {
     const [activeDot, setActiveDot] = useState(0);

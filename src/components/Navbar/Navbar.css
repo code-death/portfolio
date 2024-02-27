@@ -1,11 +1,13 @@
 .navbar {
     width: 100%;
-    padding: 8px 72px;
-    background-color: black;
+    padding: 32px 72px;
+    background-color: #00000033;
     height: 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: absolute;
+    top: 0;
 }
 
 .nav-links {
@@ -14,7 +16,69 @@
     width: 24%;
 }
 
+.nav-link {
+    color: white;
+}
+
+.nav-link:hover {
+    animation: colorchange 5s infinite ease-in-out;
+}
+
+@-webkit-keyframes colorchange {
+    0% {
+        color: #8166cd;
+    }
+
+    25% {
+
+        color: #ab57b8;
+    }
+
+    50% {
+
+        color: #c54eaa;
+    }
+
+    75% {
+
+        color: #457bec;
+    }
+
+    100% {
+
+        color: #8166cd;
+    }
+}
+
 .nav-profile-img {
     width: 38px;
     border-radius: 500px;
+}
+
+.navbar-scrolled {
+    z-index: 1000;
+    margin-left: 25vw;
+    padding: 32px 72px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 40px;
+    width: 50vw;
+    background-color: #3f3f3f66;
+    border-radius: 32px;
+    border: 1px solid #515151;
+    opacity: 0.6;
+    transition: opacity 300ms ease-in-out;
+}
+
+.navbar-scrolled:hover {
+    opacity: 1;
+}
+
+.nav-links-scrolled {
+    display: flex;
+    justify-content: space-between;
+    width: 50%;
 }
