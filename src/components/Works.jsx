@@ -2,7 +2,7 @@ import React from 'react'
 
 const Works = () => {
   return (
-    <div>Works</div>
+    <div className={'view-section'} id={'#projects'}>Projects</div>
   )
 }
 
